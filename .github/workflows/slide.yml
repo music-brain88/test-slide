@@ -1,26 +1,27 @@
 name: Marp Slides
-on:
-  push:
-    jobs:
-      marp-to-pdf:
-        runs-on: ubuntu-20.04
-        steps:
-          - uses: actions/checkout@v2
-          - name: Install requirements
-          - run: sudo apt update && sudo apt install jq
-          - name: 
-          - run: |
-              directory=$(cat config.json | jq -r .directory)
-              output_format=$(cat config.json | jq -r .output_format)
-              echo "::set-output name=DIR::${directory}"
-              echo "::set-output name=FORMAT::${output_format}"
-            id: config
-          - name: Make Slides
-          - run: docker run --rm -u root --init -v "$(pwd):/home/marp/app/"
-                -e LANG="ja_JP.UTF-8" marpteam/marp-cli ${{steps.config.outputs.DIR}}/slide.md
-                --${{steps.config.outputs.FORMAT}} 
-                -o ${{steps.config.outputs.DIR}}.${{steps.config.outputs.FORMAT}}
-                --allow-local-files
-          - uses: actions/upload-artifact@v2
-            with:
-              name: output_slide
+
+on: [push]
+    
+jobs:
+  marp-to-pdf:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install requirements
+      - run: sudo apt update && sudo apt install jq
+      - name: 
+      - run: |
+          directory=$(cat config.json | jq -r .directory)
+          output_format=$(cat config.json | jq -r .output_format)
+          echo "::set-output name=DIR::${directory}"
+          echo "::set-output name=FORMAT::${output_format}"
+        id: config
+      - name: Make Slides
+      - run: docker run --rm -u root --init -v "$(pwd):/home/marp/app/"
+            -e LANG="ja_JP.UTF-8" marpteam/marp-cli ${{steps.config.outputs.DIR}}/slide.md
+            --${{steps.config.outputs.FORMAT}} 
+            -o ${{steps.config.outputs.DIR}}.${{steps.config.outputs.FORMAT}}
+            --allow-local-files
+      - uses: actions/upload-artifact@v2
+        with:
+          name: output_slide
