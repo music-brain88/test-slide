@@ -2,13 +2,13 @@ name: Marp Slides
 
 on: [push]
 jobs:
-  marp-to-pdf:
+  make-slide-artifacts:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
       - name: Install requirements
         run: sudo apt update && sudo apt install jq
-      - name: Set env
+      - name: Set ENV
         run: |
           directory=$(cat config.json | jq -r .directory)
           output_format=$(cat config.json | jq -r .output_format)
