@@ -16,7 +16,7 @@ jobs:
           echo "::set-output name=FORMAT::${output_format}"
         id: config
       - name: Install marp
-        run: npm install -g @marp-team/marp-cli
+        run: sudo npm install -g @marp-team/marp-cli
       - name: Make Slides
         run: |
           export LANG="ja_JP.UTF-8"
