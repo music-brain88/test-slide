@@ -1,7 +1,6 @@
 name: Marp Slides
 
 on: [push]
-    
 jobs:
   marp-to-pdf:
     runs-on: ubuntu-20.04
