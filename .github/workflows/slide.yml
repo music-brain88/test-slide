@@ -15,12 +15,20 @@ jobs:
           echo "::set-output name=DIR::${directory}"
           echo "::set-output name=FORMAT::${output_format}"
         id: config
+      - name: Install marp
+        run: npm install -g @marp-team/marp-cli
       - name: Make Slides
-        run: sudo docker run --rm -u root --init -v "$(pwd):/home/marp/app/"
-            -e LANG="ja_JP.UTF-8" marpteam/marp-cli ${{steps.config.outputs.DIR}}/slide.md
-            --${{steps.config.outputs.FORMAT}}
-            -o ${{steps.config.outputs.DIR}}.${{steps.config.outputs.FORMAT}}
-            --allow-local-files
+        run: |
+          export LANG="ja_JP.UTF-8"
+          marp --${{steps.config.outputs.FORMAT}} ${{steps.config.outputs.DIR}}/slide.md \
+          -o  ${{steps.config.outputs.DIR}}.${{steps.config.outputs.FORMAT}} \
+          --allow-local-files
+      # - name: Make Slides
+      #   run: docker run --rm -u root --init -v "$(pwd):/home/marp/app/"
+      #       -e LANG="ja_JP.UTF-8" marpteam/marp-cli ${{steps.config.outputs.DIR}}/slide.md
+      #       --${{steps.config.outputs.FORMAT}}
+      #       -o ${{steps.config.outputs.DIR}}.${{steps.config.outputs.FORMAT}}
+      #       --allow-local-files
       - uses: actions/upload-artifact@v2
         with:
           name: output_slide
