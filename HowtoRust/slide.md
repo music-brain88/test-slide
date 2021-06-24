@@ -4,14 +4,13 @@ page_number: true
 theme: gaia
 paginate: true
 class: lead
-header: セキュリティのお話
+header: Rustのお話
 footer: エンジニアMTG
 
 ---
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
-
 section {
     font-family: 'Noto Serif', serif;
 
@@ -27,13 +26,17 @@ section {
 
 
 
-- Rustでデバッグでできるようになる
+- RustのCLIを知ることでterminalでの生産性を上げる
 
-- 
+- Rustデバッグでできるようになる
 
-- OAuth2.0使用したWebApplicationの場合どのフロー採用するのが最適か？
+- Rustがより好きになる
 
   
+
+
+
+
 
 # アジェンダ
 
@@ -43,3 +46,22 @@ section {
 4. Rustで推したい機能
 5. 開発にするにあたって
 6. 実際にモブプロして
+
+
+
+
+
+# Rustについて
+
+
+
+
+
+
+
+
+
+
+
+# Rustについて
+
