@@ -80,9 +80,27 @@ section {
 
 
 
+
+
 # Rustで作られたプロジェクト
 
-- 
+
+
+
+
+| OS/Software                                                  | Web                                                       | Tool                                               |
+| ------------------------------------------------------------ | --------------------------------------------------------- | -------------------------------------------------- |
+| [Windows](https://github.com/microsoft/windows-rs)           | [npm レジストリ](https://www.npmjs.com)                   | [Gremlin](https://www.gremlin.com)[^1]             |
+| [Discord](https://discord.com)                               | [FireFox](https://research.mozilla.org/rust/)             | [Linkerd](https://linkerd.io)[^2]                  |
+| [fuchsia OS(Android OS)](https://fuchsia.dev/fuchsia-src/development/languages/rust) | [Sentry](https://sentry.io/welcome/)                      | [Canonicalモニタリング](https://canonical.com)     |
+| [Dropbox](https://www.dropbox.com)                           | [Cloudflare](https://github.com/cloudflare/cloudflare-rs) | [Atlassianの解析ツール](https://www.atlassian.com) |
+
+[^1]:カオスエンジニアリングツール
+[^2]:サービスメッシュ AWSのサービスメッシュより良さげ
+
+
+
+...etc
 
 
 
