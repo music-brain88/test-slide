@@ -115,11 +115,12 @@ section {
 
 
 
-| 検索系                                           | ターミナルハイライト                         | モニタリングツール                           | 開発補助                                                     |
-| ------------------------------------------------ | -------------------------------------------- | -------------------------------------------- | ------------------------------------------------------------ |
-| [ripgrep](https://github.com/BurntSushi/ripgrep) | [bat](https://github.com/sharkdp/bat)        | [procs](https://github.com/dalance/procs)    | [cargo-update](https://github.com/nabijaczleweli/cargo-update) |
-| [fd-find](https://github.com/sharkdp/fd)         | [exa](https://github.com/ogham/exa)          | [dust](https://github.com/bootandy/dust)     | [cargo-edit](https://github.com/killercup/cargo-edit)        |
-| [tealdeer](https://github.com/dbrgn/tealdeer)    | [delta](https://github.com/dandavison/delta) | [tokei](https://github.com/XAMPPRocky/tokei) | [z](https://github.com/rupa/z)                               |
+| 検索系                                           | ハイライト                            | システム                                     | 開発補助                                                     |
+| ------------------------------------------------ | ------------------------------------- | -------------------------------------------- | ------------------------------------------------------------ |
+| [ripgrep](https://github.com/BurntSushi/ripgrep) | [bat](https://github.com/sharkdp/bat) | [procs](https://github.com/dalance/procs)    | [cargo-update](https://github.com/nabijaczleweli/cargo-update) |
+| [fd-find](https://github.com/sharkdp/fd)         | [exa](https://github.com/ogham/exa)   | [dust](https://github.com/bootandy/dust)     | [cargo-edit](https://github.com/killercup/cargo-edit)        |
+| [tealdeer](https://github.com/dbrgn/tealdeer)    |                                       | [tokei](https://github.com/XAMPPRocky/tokei) | [z](https://github.com/rupa/z)                               |
+|                                                  |                                       |                                              | [delta](https://github.com/dandavison/delta)                 |
 
 
 
