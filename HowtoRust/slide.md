@@ -92,17 +92,12 @@ section {
 | ------------------------------------------------------------ | --------------------------------------------------------- | -------------------------------------------------- |
 | [Windows](https://github.com/microsoft/windows-rs)           | [npm レジストリ](https://www.npmjs.com)                   | [Gremlin](https://www.gremlin.com)[^1]             |
 | [Discord](https://discord.com)                               | [FireFox](https://research.mozilla.org/rust/)             | [Linkerd](https://linkerd.io)[^2]                  |
-| [fuchsia OS(Android OS)](https://fuchsia.dev/fuchsia-src/development/languages/rust) | [Sentry](https://sentry.io/welcome/)                      | [Canonicalモニタリング](https://canonical.com)     |
+| [fuchsia(Android OS)](https://fuchsia.dev/fuchsia-src/development/languages/rust) | [Sentry](https://sentry.io/welcome/)                      | [Canonicalモニタリング](https://canonical.com)     |
 | [Dropbox](https://www.dropbox.com)                           | [Cloudflare](https://github.com/cloudflare/cloudflare-rs) | [Atlassianの解析ツール](https://www.atlassian.com) |
 
+1:カオスエンジニアリングツール
 
-
-[^1]:カオスエンジニアリングツール
-[^2]:サービスメッシュ AWSのサービスメッシュより良さげ
-
-
-
-...etc
+2:サービスメッシュ AWSのサービスメッシュより良さげ
 
 
 
@@ -119,6 +114,12 @@ section {
 # おすすめ Rust製CLI
 
 
+
+| 検索系                                           | ハイライトツール                             |      |
+| ------------------------------------------------ | -------------------------------------------- | ---- |
+| [ripgrep](https://github.com/BurntSushi/ripgrep) | [bat](https://github.com/sharkdp/bat)        |      |
+| [fd-find](https://github.com/sharkdp/fd)         | [exa](https://github.com/ogham/exa)          |      |
+| [tealdeer](https://github.com/dbrgn/tealdeer)    | [delta](https://github.com/dandavison/delta) |      |
 
 
 
